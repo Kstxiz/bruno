@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard</title>
+</head>
+<body>
+
+<h2>Dados</h2>
+
+<div id="adminArea" style="display:none;">
+  <h3>Criar novo dado</h3>
+  <input type="text" id="titulo" placeholder="Título">
+  <input type="text" id="descricao" placeholder="Descrição">
+  <button onclick="criarDado()">Criar</button>
+</div>
+
+<ul id="lista"></ul>
+
+<!-- ÁREA DE EDIÇÃO (SOMENTE ADMIN) -->
+<div id="editArea" style="display:none;">
+  <h3>Editar dado</h3>
+
+  <input type="hidden" id="editId">
+
+  <input type="text" id="editTitulo" placeholder="Título">
+  <input type="text" id="editDescricao" placeholder="Descrição">
+
+  <button onclick="salvarEdicao()">Salvar</button>
+  <button onclick="cancelarEdicao()">Cancelar</button>
+</div>
+
+
+<script src="js/dashboard.js"></script>
+</body>
+</html>
